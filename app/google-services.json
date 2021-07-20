@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449154011789",
+    "firebase_url": "https://originwarehouse-e09b5.firebaseio.com",
+    "project_id": "originwarehouse-e09b5",
+    "storage_bucket": "originwarehouse-e09b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449154011789:android:b043a4801b83ae98a008c4",
+        "android_client_info": {
+          "package_name": "com.imesconsult.originstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449154011789-7h5pe4svifm6ode26jemgl0n8hm9pfmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhd01MUIz6FxEBtszY9mksNjTUABS3a7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449154011789-7h5pe4svifm6ode26jemgl0n8hm9pfmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

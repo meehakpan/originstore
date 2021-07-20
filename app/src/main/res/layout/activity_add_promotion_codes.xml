@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sellers.AddPromotionCodesActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBarR1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF0A527E"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add Promotion Code"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <ImageButton
+        android:id="@+id/imageIv"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/toolBarR1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/percentage"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        />
+    <EditText
+        android:id="@+id/promoCodeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageIv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rec02"
+        android:drawablePadding="5dp"
+        android:hint="Promotion Code"
+        android:drawableLeft="@drawable/promocode_grey"
+        android:padding="8dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey02" />
+
+    <EditText
+        android:id="@+id/promoDescriptionEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoCodeEt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rec02"
+        android:drawablePadding="5dp"
+        android:hint="Promotion Description"
+        android:drawableLeft="@drawable/promocode_grey"
+        android:padding="8dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey02" />
+
+    <EditText
+        android:id="@+id/promoPriceEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoDescriptionEt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rec02"
+        android:drawablePadding="5dp"
+        android:hint="Promotion Price"
+        android:drawableLeft="@drawable/promocode_grey"
+        android:padding="8dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey02" />
+    <EditText
+        android:id="@+id/minimumOrderPriceEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoPriceEt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rec02"
+        android:drawablePadding="5dp"
+        android:hint="Minimum Order Price"
+        android:drawableLeft="@drawable/cart_grey"
+        android:padding="8dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey02" />
+
+    <TextView
+        android:id="@+id/expireDateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minimumOrderPriceEt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rec02"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="5dp"
+        android:hint="Expire Date"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey02" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expireDateTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:minWidth="150dp"
+        android:text="Add"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+</RelativeLayout>

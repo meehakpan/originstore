@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rec01">
+        
+
+
+
+        <TextView
+            android:id="@+id/itemCountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Please Confirm"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/commentTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:text="Your cart exists with some product\n from the shop\n Please confirm the order\n or\n remove products from Cart"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/shape_rec02"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:background="@color/colorGrey00">
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/exShopIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cart_grey" />
+
+        <TextView
+            android:id="@+id/ExShopNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/exShopIv"
+            android:padding="10dp"
+            android:text="Shop Name"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ExShopNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:padding="10dp"
+            android:text="Shop Name"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subTotalTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExShopNameText"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/exShopIv"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Sub Total :"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SubtotalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExShopNameTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:text="Sub Total"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/delFeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SubtotalTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:text="Delivery Fee"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delFeeTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="Total Amount"
+            android:textAlignment="textStart"
+            android:textColor="#F4511E"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dFeeTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subTotalTextTv"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/exShopIv"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Delivery Fee :"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/totalPriceTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dFeeTextTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/exShopIv"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="Total Amount :"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/goToCartBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="Go to Cart"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/removeCartBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Remove Cart"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+</LinearLayout>

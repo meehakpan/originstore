@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imesconsult.originstore"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.imesconsult.originstore.sellers.AddPromotionCodesActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.imesconsult.originstore.sellers.PromotionCodesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.sellers.OrderDetailsSellerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.ShopReviewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.WriteReviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.OrderDetailsUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.imesconsult.originstore.users.ShopDetailsActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- hide keyboard by default -->
+        <activity android:name="com.imesconsult.originstore.sellers.EditProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.sellers.AddProductActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.sellers.ProfileEditSellerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.ProfileEditUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.MainUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.sellers.MainSellerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.sellers.RegisterSellerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.RegisterUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.imesconsult.originstore.users.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- register service to allow to run in background -->
+        <service android:name="com.imesconsult.originstore.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
